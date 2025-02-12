@@ -1,5 +1,5 @@
 # Use the specified Rust image
-FROM rust:1.80.0-alpine3.20
+FROM rust:1.84.1-alpine3.20
 
 # Add the WebAssembly target
 RUN rustup target add wasm32-unknown-unknown
