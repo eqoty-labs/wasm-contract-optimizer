@@ -8,7 +8,7 @@ RUN rustup target add wasm32-unknown-unknown
 RUN apk add --no-cache build-base cmake git clang
 
 # Clone Binaryen and build it
-RUN git clone --branch version_118 --recurse-submodules https://github.com/WebAssembly/binaryen.git && \
+RUN git clone --branch version_122 --recurse-submodules https://github.com/WebAssembly/binaryen.git && \
     cd binaryen && \
     mkdir build && \
     cd build && \
