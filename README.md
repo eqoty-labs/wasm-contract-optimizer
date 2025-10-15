@@ -4,7 +4,7 @@ A dockerfile to optimize rust wasm builds targeting wasm32-unknown-unknown
 
 ### Build and publish command:
 ```
-docker buildx build --platform linux/amd64,linux/arm64 -t mr7uca/wasm-contract-optimizer:0.0.12 -f ./wasm-contract-optimizer.Dockerfile --push .
+docker buildx build --platform linux/amd64,linux/arm64 -t mr7uca/wasm-contract-optimizer:0.0.13 -f ./wasm-contract-optimizer.Dockerfile --push .
 ```
 
 

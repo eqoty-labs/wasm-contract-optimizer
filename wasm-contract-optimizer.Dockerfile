@@ -1,5 +1,5 @@
 # Use the specified Rust image
-FROM rust:1.84.1-alpine3.20
+FROM rust:1.90.0-alpine3.22
 
 # Add the WebAssembly target
 RUN rustup target add wasm32-unknown-unknown
@@ -8,7 +8,7 @@ RUN rustup target add wasm32-unknown-unknown
 RUN apk add --no-cache build-base cmake git clang
 
 # Clone Binaryen and build it
-RUN git clone --branch version_122 --recurse-submodules https://github.com/WebAssembly/binaryen.git && \
+RUN git clone --branch version_124 --recurse-submodules https://github.com/WebAssembly/binaryen.git && \
     cd binaryen && \
     mkdir build && \
     cd build && \
